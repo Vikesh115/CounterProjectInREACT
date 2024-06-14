@@ -6,7 +6,10 @@ function App() {
 
   const addValue = () => {
     if (value < 20) {
-      setValue(value + 1);
+      setValue(preValue => preValue + 1);
+      setValue(preValue => preValue + 1);
+      setValue(preValue => preValue + 1);
+      setValue(preValue => preValue + 1);
     } else {
       alert("No more add possible!");
     }
